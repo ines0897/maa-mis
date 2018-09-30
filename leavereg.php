@@ -136,7 +136,6 @@ if(isset($_POST['submit1'])){
 <div>
 
 <form method="POST">
-  
 
 BADGE NO.   : <input type="number" name="badge" id="badge"> <br><br>
 FULL NAME   : <input type="text" name="name" id="name"><br><br>
@@ -146,8 +145,8 @@ REASON      : <select id="reason" name="reason">
             <option value="Vacation leave"> VACATION LEAVE</option>
 </select>
 <br><br>
-START DATE  : <input type="date" name="sdate"><br><br>
-LAST DATE   : <input type="date" name="ldate">
+START DATE  : <input type="date" class="dates" name="sdate"><br><br>
+LAST DATE   : <input type="date" class="dates" name="ldate">
 
 
 <br><br>
@@ -160,7 +159,15 @@ LAST DATE   : <input type="date" name="ldate">
 
 
 
+<script type="text/javascript">
+  // disable previous dates
+  var today = new Date().toISOString().split('T')[0];
+  const dateElements = document.getElementsByClassName("dates");
 
+  for(var i = 0; i < dateElements.length; i++) {
+     dateElements[i].setAttribute('min', today);
+  }
+</script>
 
 
 </body>
