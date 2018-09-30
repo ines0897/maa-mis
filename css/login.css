@@ -1,0 +1,59 @@
+body{
+  height: 684px;
+  background: linear-gradient(maroon,black);
+}
+
+.login img{
+  margin-top: 20px;
+  height: 600px;
+  margin-left: 50px;
+}
+.login input[type=text], select ,input[type=password] {
+  width: 60%;
+  padding: 12px 20px;
+  margin: 20px 8px;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  font-family: courier;
+  font-weight: bold;
+}
+.login div {
+  border-radius: 5px;
+  background-color: #f2f2f2;
+  padding: 10px;
+  width: 400px;
+  height: 350px;
+  opacity: 0.7;
+  margin-top: -500px;
+  margin-left: 770px;
+  font-size: 20px;
+  font-family: courier;
+  font-weight: bolder;
+}
+.login input[type=submit] {
+  width: 30%;
+  background-color: #4CAF50;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 20px;
+  font-family: courier;
+  font-weight: bolder;
+}
+
+.login input[type=submit]:hover {
+background-color: #45a049;
+}
+
+.login .form {
+  margin-bottom: 20px;
+}
+
+.login .form-field {
+  margin-bottom: 5px;
+}
