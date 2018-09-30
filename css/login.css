@@ -1,17 +1,21 @@
 body{
-  height: 684px;
+  height: 100vh;
   background: linear-gradient(maroon,black);
+  background-repeat: no-repeat;
+}
+
+.login {
+  margin-top: 10vh;
 }
 
 .login img{
-  margin-top: 20px;
-  height: 600px;
-  margin-left: 50px;
+  /*margin-top: 20px;*/
+  /*height: 600px;*/
+  /*margin-left: 50px;*/
 }
 .login input[type=text], select ,input[type=password] {
   width: 60%;
   padding: 12px 20px;
-  margin: 20px 8px;
   display: inline-block;
   border: 1px solid #ccc;
   border-radius: 4px;
@@ -19,20 +23,21 @@ body{
   font-family: courier;
   font-weight: bold;
 }
-.login div {
+.login .container:not(.no-bg) {
   border-radius: 5px;
   background-color: #f2f2f2;
   padding: 10px;
-  width: 400px;
-  height: 350px;
+  /*width: 400px;*/
+  /*height: 350px;*/
   opacity: 0.7;
-  margin-top: -500px;
-  margin-left: 770px;
+  /*margin-top: -500px;*/
+  /*margin-left: 770px;*/
   font-size: 20px;
   font-family: courier;
   font-weight: bolder;
 }
-.login input[type=submit] {
+.login input[type=submit],
+.login .submit {
   width: 30%;
   background-color: #4CAF50;
   color: white;
@@ -46,7 +51,8 @@ body{
   font-weight: bolder;
 }
 
-.login input[type=submit]:hover {
+.login input[type=submit],
+.login .submit:hover {
 background-color: #45a049;
 }
 
@@ -56,4 +62,11 @@ background-color: #45a049;
 
 .login .form-field {
   margin-bottom: 5px;
+}
+
+.login .logo {
+  /*margin-right: 5px;*/
+}
+.login .main-form {
+  /*margin-left: 5px;*/
 }

@@ -202,15 +202,6 @@ body{
 	font-size: 25px;
 	color: black
 }
-#pass{
-	z-index: 1;
-	position: absolute;
-	top: 130px;
-	left: 20px;
-	
-	font-size: 25px;
-	color: black
-}
 #loginp1{
 	z-index: 1;
 	position: absolute;
@@ -1248,13 +1239,29 @@ input[type=button] {
     margin: 4px 2px;
     cursor: pointer;
     border-radius: 7px;
-
 }
-    div {
-    border-radius: 5px;
-    background-color: #f2f2f2;
-    padding: 10px;
-    margin-top: 10px;
-    opacity: 0.8;
 
+.base-table {
+    margin-top: -20px;
+    background-color: white;
+    margin-left: 5px;
+    border-collapse: collapse;
+    border: 1px solid #ddd;
+    font-size: 15px;
+    opacity: 0.8;
+}
+
+.base-table th, .base-table td {
+    text-align: center; /* Left-align text */
+    padding: 12px; /* Add padding */
+}
+
+.base-table tr {
+    /* Add a bottom border to all table rows */
+    border-bottom: 1px solid #ddd; 
+}
+
+.base-table tr.header, .base-table tr:hover {
+    /* Add a grey background color to the table header and on hover */
+    background-color: #f1f1f1;
 }
