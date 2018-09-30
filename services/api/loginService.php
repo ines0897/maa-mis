@@ -24,7 +24,7 @@
 	  			$return[0] = array('success' => true, 'url' => $mainUrl);
 	  			generateToken($mainUrl);
 	    	} elseif ($row['ID']==$id && $row['PASSWORD']==$pass && $row['adminID']== 'admin') {
-	    		$mainUrl = 'admin2.php';
+	    		$mainUrl = 'views/secondAdmin.php';
 	    		$return[0] = array('success' => true, 'url' => $mainUrl);
 	    		generateToken($mainUrl);
 	    	} else {

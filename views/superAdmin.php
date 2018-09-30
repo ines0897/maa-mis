@@ -49,6 +49,7 @@
   </div>
 
   <div class="col-md-6 container">
+  <center>
     <h2>ACCEPTED LEAVES</h2>
 
     <table id = "myTable1">

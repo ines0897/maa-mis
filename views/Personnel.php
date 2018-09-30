@@ -3,24 +3,12 @@
 <head>
 	<title>PERSONNEL</title>
 </head>
-<link rel="stylesheet" type="text/css" href="assets/stylesheets/style.css">
-<Style>
-	
-
-</Style>
-
+<link rel="stylesheet" type="text/css" href="../css/Personnel.css">
 <body>
+<?php $root_path = '../' ?>
+<?php require 'header.php' ?>
+<?php require 'superAdminNavigator.php'; ?>
 
-
-<ul>
-  <li><a  href="admin.php"><img src="home.png"></a></li>
-  <li><a class="active" href="personnel.php"><img src="personal.png"></a></li>
-  <li><a href="leave.php"><img src="leave.png"></a></li>
-  <li><a href="duty.php"><img src="reminder.png"></a></li>
-  <li style="float: right;"><a href="index.php"><img src="logout.png"></a></li>
-</ul>
-
-<br><br>
 <form>
  
   
@@ -43,7 +31,7 @@
      <input type="text" id="myInput" onkeyup="myFunction()" placeholder="First Name , Last Name , Badge no." >
 
 <?php
-session_start();
+
   $connect=mysqli_connect('localhost','root','','capstone');
 
   $sql = " SELECT Fname , Lname , Badge , Unit , Contact FROM addpersonnel";
@@ -59,7 +47,7 @@ session_start();
     "<td>".$row["Lname"]."</td>".
     "<td>".$row["Unit"]."</td>".
     "<td>".$row["Contact"]."</td>".
-    "<td onclick=location.href='updateinfo.php?Badge=".$row['Badge']."'>"."<input type='button' value='UPDATE' name='update'>"."</td>".
+  //  "<td onclick=location.href='updateinfo.php?Badge=".$row['Badge']."'>"."<input type='button' value='UPDATE' name='update'>"."</td>".
     "<td onclick=location.href='personnelview.php?Badge=".$row['Badge']."'>"."<input type='button' value='VIEW' name='view'>"."</td>".
   
     "</tr>";
@@ -99,8 +87,6 @@ input = document.getElementByID("myInput");
 
 
 }
-
-</script>
+<?php require 'footer.php' ?>
 </body>
-
 </html>

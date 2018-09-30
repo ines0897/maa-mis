@@ -1,0 +1,45 @@
+
+body{
+  height: 100vh;
+  background: linear-gradient(maroon,black);
+  background-repeat: no-repeat;
+}
+button {
+  display: inline-block;
+  padding: 15px 25px;
+  font-size: 24px;
+  cursor: pointer;
+  text-align: center;	
+  text-decoration: none;
+  outline: none;
+  color: #fff;
+  background-color: #D5593F;
+  border: none;
+  border-radius: 15px;
+  box-shadow: 0 9px #999;
+}
+
+.button:hover {background-color: #863321  }
+
+.button:active {
+  background-color: #863321  ;
+  box-shadow: 0 5px #666;
+  transform: translateY(4px);
+}
+img{
+	height: 190px;
+	width: 390px;
+}
+header{
+  font-size: 17px;
+  font-style: Tahoma;
+  margin-left: 1000px;
+  margin-top: 8px;
+}
+header a:hover{
+  background-color: red;
+  text-decoration: none;
+}
+.secondAdmin_main{
+
+}

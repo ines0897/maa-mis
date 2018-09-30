@@ -1,11 +1,11 @@
 <ul>
-  <li><a class="active" href="#home"><img src="../home.png"></a></li>
-  <li><a href="personnel.php"><img src="../personal.png"></a></li>
-  <li><a href="leave.php"><img src="../leave.png"></a></li>
-  <li><a href="duty.php"><img src="../reminder.png"></a></li>
+  <li><a class="active" href="superAdmin.php"><img src="../css/image/home.png"></a></li>
+  <li><a href="Personnel.php"><img src="../css/image/personal.png"></a></li>
+  <li><a href="Leave.php"><img src="../css/image/leave.png"></a></li>
+  <li><a href="duty.php"><img src="../css/image/reminder.png"></a></li>
   <li style="float: right;">
   	<a id="logout">
-  		<img src="../logout.png">
+  		<img src="../css/image/logout.png">
   	</a>
   </li>
 </ul>

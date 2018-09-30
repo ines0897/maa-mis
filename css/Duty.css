@@ -1,0 +1,137 @@
+body{
+			background-image: url("../css/image/w.png");
+			background-repeat: no-repeat;
+
+
+		}
+
+
+	.head{
+		background-color: gray;
+		height: 80px;
+		width: 1365px;
+		margin-top: -20px;
+		margin-left: -10px;
+		opacity:0.3;
+		}	
+
+	.title{
+   		margin-top:-70px;
+   		margin-left: 70px;
+   		font-family: courier;
+		font-size: 40px;
+		color: white;
+
+		}
+	
+	img{
+  height: 50px;
+  width: 50px;
+  margin-top: -20px;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #f3f3f3;
+    margin-top: -10px;
+    margin-left: -10px;
+    margin-right: -8px;
+    height: 60px;
+    opacity: 0.7;
+    position: sticky;
+}
+
+li {
+    float: left;
+}
+
+li a {
+    display: inline-block;
+    color: #666;
+    text-align: center;
+    padding: 22px 30px;
+    text-decoration: none;
+}
+
+li a:hover {
+    background-color: #111;
+}
+h1{
+   letter-spacing: 4px;
+   font-size: 50px;
+   color: white;
+   text-decoration: underline;
+   text-decoration-color: white;
+}
+input[type=submit]:hover {
+    background-color: #45a049;
+}
+
+    div {
+    border-radius: 5px;
+    background-color: #f2f2f2;
+    margin-top: -20px;
+    opacity: 0.8;
+
+}
+input[type=comment],select {
+    width: 100%;
+    padding: 12px 10px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+input[type=date],select {
+    width: 40%;
+    padding: 12px 10px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+input[type=number], select {
+    width: 40%;
+    padding: 12px 10px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+input[type=submit] {
+    width: 90%;
+    background-color: #4CAF50;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+input[type=text],select {
+    width: 40%;
+    padding: 12px 10px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+textarea{
+    width: 40%;
+    padding: 12px 10px;
+    margin: 10px 0;
+    margin-left: 50px;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+
+}

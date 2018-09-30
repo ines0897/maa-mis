@@ -2,16 +2,18 @@
 <?php require 'header.php'; ?>
 
 <link rel="stylesheet" type="text/css" href="css/login.css">
-<?php echo ($_SESSION && $_SESSION['token']) ?>
+
 <div class="login col-md-12">
-	<div class="container logo col-md-5">
+	<div class="container logo col-md-5 no-bg">
 		<?php
-			echo "<img src='assets/images/bjmp-logo.png' />"; 
+			echo "<img class='logo' src='assets/images/bjmp-logo.png' />"; 
 		 ?>
 	</div>
 	<div class="container col-md-1 no-bg"></div>
+	<br><br><br>
 	<div class="container main-form col-md-6">
 		<div class="form">
+		<center>
 			<div class="form-field">
 		    	USERNAME: <input type="text" id="id" required>
 			</div>
@@ -21,9 +23,7 @@
 			<div class="form-field">
 		    	<button class="submit" id="login">LOGIN</button>
 			</div>
-
-			
-
+		</center>
 		</div>
 	</div>
 </div>

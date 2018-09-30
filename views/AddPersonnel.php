@@ -3,27 +3,25 @@
 <head>
 	<title>ADD PERSONNEL</title>
 </head>
-    <link rel="stylesheet" type="text/css" href="assets/stylesheets/style.css">
-<style>
-	
-</style>
-
+<link rel="stylesheet" type="text/css" href="../css/AddPersonnel.css">
 <body>
+<?php $root_path = '../' ?>
+<?php require 'header.php' ?>
 <pre class="border">  PERSONNEL'S INFORMATION:</pre>
 <pre>
 	<div>
   <form action="" method="POST">
-    <label for="fname">FIRST NAME:</label>                                                                                                                                                                       <label for="lname">LAST NAME:</label>
+    <label for="fname">FIRST NAME:</label>                                  					      <label for="lname">LAST NAME:</label>
     <input type="text" id="fname" name="fname" required>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp<input type="text" id="lname" name="lname" required>
 
-    <label for="badge">BADGE NO.:</label>                                                                                                                                                                          <label for="unit">UNIT/REGION:</label>
+    <label for="badge">BADGE NO.:</label>                                                                                <label for="unit">UNIT/REGION:</label>
     <input type="text" id="badge" name="badge" required>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp<input type="text" id="unit" name="unit" required>
 
-    <label for="contact">CONTACT NO.</label>                                                                                                                                                                      <label for="place">PLACE OF BIRTH</label>                                      
-    <input type="text" name="contact" id="contact" required>                  <input type="text" name="place" id="place" required>
+    <label for="contact">CONTACT NO.</label>                                                                  	      <label for="place">PLACE OF BIRTH</label>                                      
+    <input type="text" name="contact" id="contact" required>                 <input type="text" name="place" id="place" required>
 
-    <label for="birth">DATE OF BIRTH:</label>                                                                                                                                                                  <label for="gender">GENDER:</label>
-    <input type="date" name="birth" id="birth" required>                  <select id="gender" name="gender" required>
+    <label for="birth">DATE OF BIRTH:</label>                                                                            <label for="gender">GENDER:</label>
+    <input type="date" name="birth" id="birth" required>                 <select id="gender" name="gender" required>
       <option value="male">MALE</option>
       <option value="female">FEMALE</option>
     </select>
@@ -31,11 +29,11 @@
     <label for="comment">ADDRESS:</label>
     <input type="text" id="address" name="address" required>
     
-    <label for="hair">COLOR OF THE HAIR</label>                                                                                                                                                          <label for="eyes">COLOR OF THE EYES</label>
-    <input type="text" name="hair" id="hair" required>                  <input type="text" name="eyes" id="eyes" required>
+    <label for="hair">COLOR OF THE HAIR</label>                                                                         <label for="eyes">COLOR OF THE EYES</label>
+    <input type="text" name="hair" id="hair" required>                 <input type="text" name="eyes" id="eyes" required>
 
-    <label for="spouse">NAME OF SPOUSE:</label>                                                                                                                                                                <label for="occu">OCCUPATION:</label>
-    <input type="text" name="spouse" id="spouse" required>                  <input type="text" name="occu" id="occu" required>
+    <label for="spouse">NAME OF SPOUSE:</label>                                                                           <label for="occu">OCCUPATION:</label>
+    <input type="text" name="spouse" id="spouse" required>                 <input type="text" name="occu" id="occu" required>
     
     
   
@@ -96,5 +94,6 @@
         }
 }
 ?>
+<?php require 'footer.php' ?>
 </body>
 </html>
