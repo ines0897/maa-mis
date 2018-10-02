@@ -14,7 +14,55 @@
 <?php require 'superAdminNavigator.php'; ?>
 <center><h1> LEAVE REQUEST'S</center></h1>
 </div>
-<form>
+
+
+<table id = "myTable">
+<tr class="header">
+  
+     <th style="width:20%;">BADGE NO.</th>
+    <th style="width:40%;">FULL NAME</th>
+     <th style="width:20%;">REASON</th>
+     <th style="width:20%;">START DATE</th>
+     <th style="width:20%;">LAST DATE</th>
+     <th style="width:20%;">ACTION</th>
+    </tr>
+    <tr>
+
+       <?php
+
+            $query= "SELECT * from leave1";
+            if(count(fetchall($query))>0){
+              foreach (fetchall($query) as $row) {
+                ?>
+          <td><?php echo $row['Fullname'];?></td>
+          <td><?php echo $row['Badge']?></td>
+          <td><?php echo $row['Reason']?></td>
+          <td><?php echo $row['Sdate']?></td>
+          
+         <td><button data-id="<?php echo $row['ID']; ?>" class="accept"><img class="pic" src="../css/image/accept.png"></button></td>
+         <td><button data-id="<?php echo $row['ID']; ?>" class="reject"><img class="pic" src="../css/image/reject.png"></button></td>
+          </tr> 
+    <?php        
+              }
+
+            }else{
+              echo "no pending request.";
+            }
+
+        ?>
+        
+
+
+
+
+
+
+
+
+
+
+
+<!-- <form>
 
 </div>
 <center>
@@ -51,7 +99,7 @@
       </section>
 
 
-    </main>
+    </main> -->
 
 
 <script type="text/javascript">
@@ -103,7 +151,59 @@
             if (data.success) {
               swal(
                 'ACCEPTTED!',
-                'The request has been acceptted.',
+                'The request has been accepted.',
+                'success'
+              );
+              location.reload();
+            } else {
+              somethingWentWrong();
+            }
+          },
+          error: function(err) {
+            somethingWentWrong();
+          },
+        });
+      }
+    })
+  });
+
+  $('.reject').on('click', function(e) {
+    const ID = $( this ).attr('data-id');
+
+    if (!ID) {
+      somethingWentWrong();
+      return;
+    }
+
+    swal({
+      title: 'Are you sure?',
+      text: "DO YOU WANT TO REJECT THIS",
+      type: 'warning',
+      showCancelButton: true,
+      confirmButtonColor: '#3085d6',
+      cancelButtonColor: '#d33',
+      confirmButtonText: 'Yes, reject it!'
+    }).then((result) => {
+      if (result.value) {
+        $.ajax({
+          url: "../services/api/RejectLeave.php",
+          data: {
+            id,
+          },
+          method: 'POST',
+          accepts: "application/json; charset=utf-8",
+          success: function( result ) {
+            if (!result) {
+              somethingWentWrong();
+              return;
+            }
+
+            const data = JSON.parse(result);
+
+            if (data.success) {
+              swal(
+                'REJECTED!',
+                'The request has been rejected.',
                 'success'
               );
               location.reload();

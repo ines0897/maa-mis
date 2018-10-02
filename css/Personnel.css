@@ -97,3 +97,10 @@ img{
   width: 50px;
   margin-top: -20px;
 }
+.view{
+    height: 30px;
+    width: 30px;
+    background-color: #CE715C;
+    margin-top: 5px;
+    border-radius: 5px;
+}

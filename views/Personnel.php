@@ -48,7 +48,7 @@
     "<td>".$row["Unit"]."</td>".
     "<td>".$row["Contact"]."</td>".
   //  "<td onclick=location.href='updateinfo.php?Badge=".$row['Badge']."'>"."<input type='button' value='UPDATE' name='update'>"."</td>".
-    "<td onclick=location.href='personnelview.php?Badge=".$row['Badge']."'>"."<input type='button' value='VIEW' name='view'>"."</td>".
+    "<td onclick=location.href='personnelview.php?Badge=".$row['Badge']."'>"."<img class='view' src='../css/image/view.png'>"."</td>".
   
     "</tr>";
 

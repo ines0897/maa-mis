@@ -1,137 +1,13 @@
-<?php 
-session_start();
-ob_clean();
-ob_flush();
-
- ?>
 <!DOCTYPE html>
 <html>
 <head>
-	<title>UPDATE PERSONNEL'S INFORMATION</title>
+	<title>UPDATE PERSONNELS DATA</title>
 </head>
-<style >
-body{
-            background-image: url("w.png");
-           
-        }
-	
-
-	.border{
-		opacity: 0.6;
-		margin-top:-10px;
-		margin-left: -11px;
-		background-color: grey;
-		border-color: grey;
-		height: 70px;
-		width: 1350px;
-		font-size: 50px;
-		font-family: courier;
-		font-weight: bolder;
-
-	}
-	p{
-		letter-spacing: 3px;
-		font-size: 20px;
-	}
-	h1{
-		color: white;
-		margin-left: 40px;
-	}
-
-input[type=text],select {
-   	width: 40%;
-    padding: 12px 10px;
-    margin: 8px 0;
-    display: inline-block;
-    border: 1px solid #ccc;
-    border-radius: 4px;
-    box-sizing: border-box;
-}
-input[type=comment],select {
-    width: 100%;
-    padding: 12px 10px;
-    margin: 8px 0;
-    display: inline-block;
-    border: 1px solid #ccc;
-    border-radius: 4px;
-    box-sizing: border-box;
-}
-input[type=date],select {
-    width: 40%;
-    padding: 12px 10px;
-    margin: 8px 0;
-    display: inline-block;
-    border: 1px solid #ccc;
-    border-radius: 4px;
-    box-sizing: border-box;
-}
-input[type=number], select {
-   	width: 40%;
-    padding: 12px 10px;
-    margin: 8px 0;
-    display: inline-block;
-    border: 1px solid #ccc;
-    border-radius: 4px;
-    box-sizing: border-box;
-}
-
-input[type=tel], select {
-    width: 40%;
-    padding: 12px 10px;
-    margin: 8px 0;
-    display: inline-block;
-    border: 1px solid #ccc;
-    border-radius: 4px;
-    box-sizing: border-box;
-}
-
-input[type=submit] {
-    width: 90%;
-    background-color: #4CAF50;
-    color: white;
-    padding: 14px 20px;
-    margin: 8px 0;
-    border: none;
-    border-radius: 4px;
-    cursor: pointer;
-}
-
-input[type=submit]:hover {
-    background-color: #45a049;
-}
-
-    div {
-    border-radius: 5px;
-    background-color: #f2f2f2;
-    padding: 10px;
-    margin-top: -20px;
-    opacity: 0.8;
-
-}
-  
-pre{
-    font-family: lucida;
-}
-a:link, a:visited {
-  background-color: #4CAF50;
-    color: white;
-    padding: 14px 25px;
-    text-align: center;	
-    text-decoration: none;
-    display: inline-block;
-	width: 86%;
-	border-radius: 4px;
-    cursor: pointer;
-}
-
-
-</style>
-
-
-
 <body>
+<?php $root_path = '../' ?>
+<?php require 'header.php' ?>
 <?php  
-require 'conn.inc.php';
+require '../conn.inc.php';
 
 if(isset($_GET['Badge'])) {
     $var = $_GET['Badge'];  
@@ -207,7 +83,7 @@ if(isset($_GET['Badge'])) {
 </pre>
 </body>
 <?php
-require 'conn.inc.php';
+require '../conn.inc.php';
 
 $Badge = '';
 $Fname = '';
@@ -287,5 +163,6 @@ window.location = "personnel.php"
   }
 }
 ?>
+<?php require 'footer.php' ?>
 </body>
 </html>

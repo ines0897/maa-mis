@@ -1,0 +1,28 @@
+	input[type=text],select {
+    width: 20%;
+    padding: 12px 10px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+pre{
+    font-family: lucida;
+    font-size: 15px;
+}
+input[type=submit] {
+    width: 50%;
+    background-color: #4CAF50;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+#img1{
+	height: 200px;
+	width: 200px;
+	border-radius: 5px;
+}

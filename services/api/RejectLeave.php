@@ -6,8 +6,9 @@ $id = $_GET['ID'];
 $query= "DELETE FROM `leave1` WHERE `leave1`.`ID` = '$id'";
 		
 if(performquery($query)){
-
-		header("location:leave.php");
+	$mainUrl = 'views/Leave.php';
+	$return[0] = array('success' => true, 'url' => $mainUrl);
+	generateToken($mainUrl);
 }else{
 	echo "unkwon error";
 }
@@ -16,4 +17,3 @@ if(performquery($query)){
 ?>
 
 <br><br>
-<a href="leave.php">back</a>

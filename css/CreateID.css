@@ -1,19 +1,13 @@
-<!DOCTYPE html>
-<html>
-<head>
-<link href="barcode_style.css" type="text/css" rel="stylesheet"/>
-	<title></title>
-</head>
-<style>
-	body{     
+body{     
 
-			background-image: url("w.png");
+			background-image: url("../css/image/w.png");
 			background-repeat:repeat;
 
 
 		}
-	div {
-    width: 80%;
+.div{
+    
+    margin-left:10px; 
     border-radius: 5px;
     background-color: #f2f2f2;
     padding: 10px;
@@ -66,7 +60,7 @@ input[type=del], select {
 }
 
 input[type=submit] {
-    width: 90%;
+    width: 20%;
     background-color: #4CAF50;
     color: white;
     padding: 14px 20px;
@@ -118,7 +112,8 @@ img{
     margin-top: 40px;
 }
 .field{
-    margin-left: -150px;
+    margin-left: 170px;
+    
 }
 a:link, a:visited {
   background-color: #4CAF50;
@@ -127,37 +122,8 @@ a:link, a:visited {
     text-align: center; 
     text-decoration: none;
     display: inline-block;
-    width: 86%;
+    width: 20%;
     border-radius: 4px;
     cursor: pointer;
 }
 
-</style>
-<?php
-
-?>
-
-<body>
-<center>  <h1> CREATE VISITOR'S ID </h1> </center>
-<div>
-<form method="POST" action="generate_barcode.php" enctype="multipart/form-data">
-<center>
-<pre class="pic">	
-<img src="addphoto.png">
-<input type="file" name="image">
-</pre></center>
-<pre class="field">
-                NAME:    <input type="text" name="name1" required>
-                AGE:     <input type="del" name="age" required>
-                ADDRESS: <input type="text" name="address" required>
-                CELL NO: <input type="del" name="cp_no" required>
-</pre><br><br>
-     <input type="submit" name="submit" id="submit" value="SUBMIT">
-    <a href="admin2.php">BACK</a>
-
-	
-</form>	
-</pre>
-</div>
-</body>
-</html>

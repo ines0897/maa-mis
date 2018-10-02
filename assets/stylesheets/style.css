@@ -960,11 +960,10 @@ z-index: 99;
 
 /* */
 #myTable {
-	
-
 	background-color: white;
+	opacity: 0.8;
 	position: absolute;
-	top: 180px;
+	top: 160px;
 	margin-left: -2px;
     border-collapse: collapse; /* Collapse borders */
     width: 99%;

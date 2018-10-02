@@ -16,7 +16,7 @@
 
 <div class="col-md-6 container">
 <div class="pane_ panel-primary">
-	<a href="leavereg.php">
+	<a href="RegisterLeave.php">
 		<button class="button">
 			<strong>REQUEST LEAVE FORM</strong>
 				<br><img src="../css/image/leavereg.png">
@@ -25,7 +25,7 @@
 </div>
 <br><br>
 <div class="panel_panel-primary">
-	<a href="createID.php">
+	<a href="CreateID.php">
 		<button class="button">
 			<strong>CREATE ID FORM</strong>
 				<br><img src="../css/image/createid.png">
@@ -35,7 +35,7 @@
 </div>
 <div class="col-md-6 container">
 <div class="panel_panel-primary">
-	<a href="view.php">
+	<a href="Reminder.php">
 		<button class="button">
 			<strong>REMINDER'S</strong>
 				<?php $query = "SELECT * from `reminders` where `type` = 'unread' order by `datenow` DESC"; if(count(fetchAll($query))>0){?> 
@@ -47,7 +47,7 @@
 </div>
 <br><br>
 <div class="panel_panel-primary">
-	<a href="generate_barcode.php">
+	<a href="PrintID.php">
 		<button class="button">
 			<strong>VISITORS ID</strong>
 				<br><img src="../css/image/id.png">

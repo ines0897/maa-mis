@@ -54,7 +54,7 @@ li a:hover {
 h1{
    letter-spacing: 4px;
    font-size: 70px;
-   color: #FFFBFB  ;
+   color: whites  ;
 }
   
 
@@ -191,5 +191,12 @@ img{
     color: #000;
     text-decoration: none;
     cursor: pointer;
+}
+button{
+  background-color: transparent;
+  border-color: transparent;
+}
+.pic{
+  margin-top: 5px;
 }
 

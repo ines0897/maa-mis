@@ -1,29 +1,9 @@
-<?php
-session_start();
- include("function.php");
- ?>
-
-<!DOCTYPE html>
-<html>
-<head>
-	<title></title>
-</head>
-
-<style>
 	body{
-			background-image: url("w.png");
+			background-image: url("../css/image/w.png");
 			background-repeat: no-repeat;
 
 
 		}
-	div{
-    width: 80%;
-    border-radius: 5px;
-    background-color: #f2f2f2;
-    padding: 10px;
-    margin-top: 10px;
-    opacity: 0.8;
-}
 
 	.pic{
 		border-color: grey;
@@ -70,7 +50,7 @@ input[type=del], select {
 }
 
 input[type=submit] {
-    width: 30%;
+    width: 10%;
     background-color: #4CAF50;
     color: white;
     padding: 14px 20px;
@@ -86,15 +66,6 @@ input[type=submit]:hover {
     background-color: #45a049;
 }
 
-    div {
-    border-radius: 5px;
-    background-color: #f2f2f2;
-    padding: 20px;
-    margin-top: -20px;
-    margin-left: 60px;
-    opacity: 0.8;
-
-}
 form{
 	font-family: courier;
 	font-size: 20px;
@@ -113,7 +84,7 @@ form{
   background-color: white;
   position: absolute;
   top: 180px;
-  margin-left: -2px;
+  margin-left: -10px;
     border-collapse: collapse; /* Collapse borders */
     width: 99%;
     border: 1px solid #ddd; /* Add a grey border */
@@ -139,51 +110,11 @@ form{
     /* Add a grey background color to the table header and on hover */
     background-color: #f1f1f1;
 }
-
-</style>
-<body>
-<center>  <h1> REMINDER'S </h1> </center>
-
-<table id = "myTable">
-<tr class="header">
-  
-     <th style="width:20%;">EVENT</th>
-    <th style="width:40%;">MESSAGE</th>
-     <th style="width:20%;">DATE</th>
-     <th style="width:20%;">DATE TODAY</th>
-    </tr>
-    <tr>
-
-
-
-<?php
-$connect=mysqli_connect('localhost','root','','capstone');
-
-  $sql = " SELECT event , message , date , datenow FROM reminders ";
-
-  $recon = mysqli_query($connect, $sql);
-
-      if(mysqli_num_rows($recon) > 0){ // table data start
-  while ($row = mysqli_fetch_assoc($recon)) { // loop data start
-
-    echo 
-    "<td>".$row["event"]."</td>".
-    "<td>".$row["message"]."</td>".
-    "<td>".$row["date"]."</td>".
-    "<td>".$row["datenow"]."</td>".
-
-    "</tr>";
-
-   
-  } 
+.back{
+    background-color: #DB3C19;
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    margin-top: -20px;
+    margin-left:1240px; 
 }
-
-
-?>
-
-<dv>
-  <a href="admin2.php"><input type="submit" name="back" id="back" value="BACK"></a>
-</dv>
-
-</body>
-</html>
