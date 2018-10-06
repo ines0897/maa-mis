@@ -9,7 +9,7 @@
 <?php $root_path = '../' ?>
 <?php require 'header.php' ?>
 
-<center>  <h1> REMINDER'S </h1> </center>
+<center>  <h1 style="color:white;"> REMINDERS </h1> </center>
 
 <center>
 <table id = "myTable">

@@ -2,7 +2,7 @@
   <li><a class="active" href="superAdmin.php"><img src="../css/image/home.png"></a></li>
   <li><a href="Personnel.php"><img src="../css/image/personal.png"></a></li>
   <li><a href="Leave.php"><img src="../css/image/leave.png"></a></li>
-  <li><a href="duty.php"><img src="../css/image/reminder.png"></a></li>
+  <li><a href="Duty.php"><img src="../css/image/reminder.png"></a></li>
   <li style="float: right;">
   	<a id="logout">
   		<img src="../css/image/logout.png">

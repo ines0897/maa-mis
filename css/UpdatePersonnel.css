@@ -74,7 +74,7 @@ input[type=tel], select {
 }
 
 input[type=submit] {
-    width: 90%;
+    width: 30%;
     background-color: #4CAF50;
     color: white;
     padding: 14px 20px;
@@ -99,6 +99,7 @@ input[type=submit]:hover {
   
 pre{
     font-family: lucida;
+    opacity: 0.8;
 }
 a:link, a:visited {
   background-color: #4CAF50;
@@ -107,7 +108,7 @@ a:link, a:visited {
     text-align: center;	
     text-decoration: none;
     display: inline-block;
-	width: 86%;
+	width: 30%;
 	border-radius: 4px;
     cursor: pointer;
 }

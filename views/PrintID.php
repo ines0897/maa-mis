@@ -18,7 +18,7 @@ $con=mysqli_connect('localhost','root','','capstone');
 
   if(isset($_POST['submit'])){
 
-    $target ="images/".basename($_FILES['image']['name']);
+    $target ="image/".basename($_FILES['image']['name']);
     $image = $_FILES['image']['name'];
     $name1 = $_POST['name1'];
     $age = $_POST['age'];
@@ -39,7 +39,6 @@ $con=mysqli_connect('localhost','root','','capstone');
 ?>
 
   <a href="secondAdmin.php" ><img class="back"  src="../css/image/back.png"></a>
-
 <table id = "myTable">
 <tr class="header">
   
@@ -63,7 +62,7 @@ $con=mysqli_connect('localhost','root','','capstone');
 
     echo
     "<tr>".
-     "<td><img src ='../images/".$row["image"]."'</td>".
+     "<td><img src ='../image/".$row["image"]."'</td>".
      "<td>".$row["name"]."</td>".
      "<td>".$row["age"]."</td>".
      "<td>".$row["address"]."</td>".

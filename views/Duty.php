@@ -1,14 +1,24 @@
+<<?php
+include ("../function.php");
+?>
+
 <!DOCTYPE html>
 <html>
 <head>
-	<title></title>
+	<title>ADD REMINDERS</title>
 </head>
+<style type="text/css">
+  body{
+    margin: 0px !important;
+    padding: 0px !important;
+  }
+</style>
 <body>
 <?php $root_path = '../' ?>
 <?php require 'header.php' ?>
 <link rel="stylesheet" type="text/css" href="../css/Duty.css">
 <?php require 'superAdminNavigator.php'; ?>
-<center><h1> REMINDER'S</center>
+<center><h1> REMINDERS</center>
 <center>
 <br>
 <div>
@@ -26,6 +36,28 @@ DATE    :  <input type="date" name="date" class="dates" required><br><br>
 </div>
 
 </center>
+
+<?php
+
+if(isset($_POST['submit'])){
+  $event = $_POST['event'];
+  $message = $_POST['message'];
+  $date = $_POST['date'];
+  
+  $query= "INSERT INTO reminders(`id`, `event`, `message`, `date`, `type`, `datenow`) VALUES (NULL, '$event', '$message', '$date', 'unread', CURRENT_TIMESTAMP)";
+  if(performquery($query)){
+        echo "<script> alert('Reminder created successfully!')</script>";
+
+       header('location:superAdmin.php');
+  }else{
+    echo "<script> alert('unkown error occured')</script>";
+
+  }
+
+}
+
+
+?>
 
 
 <script type="text/javascript">

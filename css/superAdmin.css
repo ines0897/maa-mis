@@ -149,3 +149,8 @@ h2{
 .base-table {
   margin-top: 10px;
 }
+.calendar{
+  margin-top: -60px;
+  float: right;
+  background-color: white;
+}

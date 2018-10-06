@@ -1,3 +1,7 @@
+<<?php
+include ("../function.php");
+?>
+
 <!DOCTYPE html>
 <html>
 <head>
@@ -12,7 +16,7 @@
 
 <body>
 
-<center>  <h1> REQUEST LEAVE FORM </h1> </center>
+<center>  <h1 style="color:white;"> REQUEST LEAVE FORM </h1> </center>
 <center>
 <div>
 
@@ -48,7 +52,7 @@ if(isset($_POST['submit1'])){
   $query= "INSERT INTO `leave1` (`ID`, `Badge`, `Fullname`, `Reason`, `Sdate`, `Ldate`) VALUES (NULL, '$badge', '$fname', '$reason', '$sdate', '$ldate')";
   
   if(performquery($query)){
-       echo "<script> alert('pending')</script>";//sweetalert
+       echo "<script> alert('REQUEST SUCCESSFULY SUBMITTED')</script>";//sweetalert
   }else{
     echo "<script> alert('unkown error occured')</script>";//sweetalert
   }

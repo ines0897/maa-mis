@@ -27,7 +27,7 @@
     </select>
 
     <label for="comment">ADDRESS:</label>
-    <input type="text" id="address" name="address" required>
+    <input type="text" id="address" name="address" style="color: black" required>
     
     <label for="hair">COLOR OF THE HAIR</label>                                                                         <label for="eyes">COLOR OF THE EYES</label>
     <input type="text" name="hair" id="hair" required>                 <input type="text" name="eyes" id="eyes" required>

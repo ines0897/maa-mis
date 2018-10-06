@@ -40,7 +40,7 @@ if(isset($_GET['Badge'])) {
 <pre class="border">  PERSONNEL'S INFORMATION:</pre>
 
 <pre>
-<a href="UpdatePersonnel.php?Badge="<?php.$row['$Badge'].?> class="edit1"><img class="edit" src="../css/image/edit.png"></a>
+<a href="UpdatePersonnel.php?Badge=<?php echo $row['Badge']?>" class="edit1"><img class="edit" src="../css/image/edit.png"></a>
 
   <form method="POST">
    <label> BADGE NO.:</label>
@@ -59,7 +59,7 @@ if(isset($_GET['Badge'])) {
     
 
     <label for="comment">ADDRESS:</label>
-    <input type="text" id="address" name="Address" value="<?php echo $Address;?>" readonly>
+    <input type="text" id="address" name="Address" style="color: black" value="<?php echo $Address;?>" readonly>
     
     <label for="hair">COLOR OF THE HAIR</label>                                                                    	<label for="eyes">COLOR OF THE EYES</label>
     <input type="text" name="Hair" id="Hair" value="<?php echo $Hair;?>" readonly>                  <input type="text" name="Eyes" id="Eyes" value="<?php echo $Eyes;?>" readonly> 

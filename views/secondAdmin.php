@@ -14,7 +14,7 @@
 <center><br>
 <div class="col-md-12" id="secondAdmin_main">
 
-<div class="col-md-6 container">
+<div class="col-md-4 container">
 <div class="pane_ panel-primary">
 	<a href="RegisterLeave.php">
 		<button class="button">
@@ -33,11 +33,11 @@
 	</a>
 </div>
 </div>
-<div class="col-md-6 container">
+<div class="col-md-4 container">
 <div class="panel_panel-primary">
 	<a href="Reminder.php">
 		<button class="button">
-			<strong>REMINDER'S</strong>
+			<strong>REMINDERS</strong>
 				<?php $query = "SELECT * from `reminders` where `type` = 'unread' order by `datenow` DESC"; if(count(fetchAll($query))>0){?> 
 					<span class="badge badge-light"><?php echo count(fetchAll($query)); ?></span> 
 				<?php }    ?>
@@ -55,10 +55,30 @@
 	</a>  
 </div>
 </div>
+<div class="col-md-4 container">
+<div class="panel_panel-primary">
+	<a href="RejectAcceptLeave.php">
+		<button class="button">
+			<strong>Accepted & Rejected Leave</strong>
+				
+					<br><img src="../css/image/ARLeave.png">
+		</button>
+	</a>  
+</div>
+<br><br>
+<div class="panel_panel-primary">
+	<a href="PrintID.php">
+		<button class="button">
+			<strong>Create Visiting Report</strong>
+				<br><img src="../css/image/id.png">
+		</button>
+	</a>  
+</div>
+</div>
 
 </div>
 
- <a id="logout">
+ <a id="logout"><br><br>
  	<button>LOG-OUT</button>
  </a>
 

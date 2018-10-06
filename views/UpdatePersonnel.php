@@ -3,6 +3,7 @@
 <head>
 	<title>UPDATE PERSONNELS DATA</title>
 </head>
+<link rel="stylesheet" type="text/css" href="../css/UpdatePersonnel.css">
 <body>
 <?php $root_path = '../' ?>
 <?php require 'header.php' ?>
@@ -39,9 +40,9 @@ if(isset($_GET['Badge'])) {
 <pre>
 	<div>
   <form method="POST">
-  <label> BADGE NO.:</label>
-  <input type="number" name="Badge" id="Badge" value="<?php echo $Badge;?>">
-    <label for="fname">FIRST NAME:</label>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp                                        <label for="lname">LAST NAME:</label>
+   <label> BADGE NO.:</label>
+    <input type="number" name="Badge" id="Badge" value="<?php echo $Badge;?>" disabled>
+    <label for="fname">FIRST NAME:</label>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp   <label for="lname">LAST NAME:</label>
     <input type="text" id="fname" name="Fname" value="<?php echo $Fname;?>">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp<input type="text" id="lname" name="Lname" value="<?php echo $Lname;?>">
 
     <label for="unit">UNIT/REGION:</label>
@@ -52,9 +53,9 @@ if(isset($_GET['Badge'])) {
  
 
     <label for="comment">ADDRESS:</label>
-    <input type="text" id="address" name="Address" value="<?php echo $Address;?>">
+    <input type="text" style="color:black;" id="address" name="Address" value="<?php echo $Address;?>">
     
-    <label for="hair">COLOR OF THE HAIR</label>                                                                                                                                                           <label for="eyes">COLOR OF THE EYES</label>
+    <label for="hair">COLOR OF THE HAIR</label>                                                                           <label for="eyes">COLOR OF THE EYES</label>
     <input type="text" name="Hair" id="Hair" value="<?php echo $Hair;?>">                  <input type="text" name="Eyes" id="Eyes" value="<?php echo $Eyes;?>"> 
      
   
@@ -74,8 +75,7 @@ if(isset($_GET['Badge'])) {
 
     <br><br>
 <center>
-    <input type="submit" id="update" name="update" value="UPDATE"><br><br>
-    <a href="personnel.php">BACK</a>
+    <input type="submit" id="update" name="update" value="UPDATE"> <a href="personnel.php">BACK</a>
 </center>
     </form>
 

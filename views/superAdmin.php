@@ -1,3 +1,4 @@
+<title>HOME</title>
 <?php $root_path = '../' ?>
 <?php require 'header.php' ?>
 
@@ -7,7 +8,7 @@
 
 <div class="col-md-12">
   <div class="col-md-6 container">
-    <h1>Reminders</h1>
+    <h1>REMINDERS</h1>
 
     <table class="base-table">
     <tr class="header">
@@ -35,7 +36,7 @@
           "<td>".$row["datenow"]."</td>";
           ?>
 
-          <td><button data-id="<?php echo $row['id']; ?>" class="delete">DELETE</button></td>
+          <td><button data-id="<?php echo $row['id']; ?>" class="delete" class="btn btn-danger">DELETE</button></td>
 
           </tr>
         <?php
@@ -50,7 +51,7 @@
 
   <div class="col-md-6 container">
   <center>
-    <h2>ACCEPTED LEAVES</h2>
+    <h2>ACCEPTED LEAVES</h2> <a href="CreateReport.php"><img class="calendar" src="../css/image/calendar.png"></a>
 
     <table id = "myTable1">
     <tr class="header">

@@ -26,6 +26,8 @@
         $stmt = $con->query($query);
         return $stmt->fetch();
     }
-  
+
+ 
+ 
 
 ?>
